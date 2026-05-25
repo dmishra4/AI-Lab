@@ -1,0 +1,4 @@
+2026-05-19 10:10:22 ERROR Selenium TimeoutException
+Element not clickable at point
+Checkout button covered by popup
+Pipeline failed in stage regression_tests
