@@ -266,7 +266,7 @@ training_args = TrainingArguments(
 
     output_dir="./results",
 
-    num_train_epochs=2,
+    num_train_epochs=1,
 
     per_device_train_batch_size=8,
 
@@ -378,7 +378,7 @@ print(classification_report(
 print("\n===== SAVING MODEL =====")
 
 # Save trained model
-model.save_pretrained("./saved_bert_model")
+model.save_pretrained("./saved_bert_model", safe_serialization= False)
 
 # Save tokenizer
 tokenizer.save_pretrained("./saved_bert_model")
